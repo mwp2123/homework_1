@@ -15,6 +15,12 @@ library(tidyverse)
 Create a dataframe with the specified elements
 
 ```{r}
-
+prob1_df = 
+tibble(
+  samp = rnorm(10),
+  samp_gt_0 = samp > 0,
+  char_vec = c("a", "b", "c", "d","e","f","g","h","i","j"),
+  factor_vec = factor(c("low","low","low","mod","mod","mod","mod","high","high","high"))
+)
 ```
 
